@@ -1,0 +1,76 @@
+p, b, a{
+  @include media-breakpoint-down(sm)
+  {
+    font-size: 10px;
+  }
+}
+
+h2{
+  @include media-breakpoint-down(sm)
+  {
+    font-size: 20px;
+  }
+}
+
+
+h4{
+  @include media-breakpoint-down(sm)
+  {
+    font-size: 15px;
+  }
+}
+
+.c-base-section{
+  text-align: center;
+  padding: 70px 0;
+}
+
+.c-base-bottom-triangle{
+  border-style: solid;
+  border-width: 80px 100vw 0 0;
+  border-color: transparent white transparent transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.c-base-top-triangle{
+  border-style: solid;
+  border-width: 0 100vw 80px 0;
+  border-color: transparent white transparent transparent;
+  position: absolute;
+  top: 0;
+}
+
+.c-base-img-background{
+  position: relative;
+  height: 350px;
+}
+
+.c-img {
+  width: 100%;
+  height: 100%;
+  background: url("../../../images/backround/apple-1854101_1920.jpg") 50% 50%;
+  background-size: cover;
+}
+
+.c-base-header{
+  padding: 10px 0;
+}
+
+.c-logo{
+  height: 100px;
+  width: 100px;
+
+  @include media-breakpoint-down(sm)
+  {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.c-skills{
+  margin-top: 30px;
+  width: 100%;
+  border-bottom: black 2px solid;
+  padding: 10px;
+}

@@ -1,0 +1,32 @@
+.c-jumbotron{
+  width: 100%;
+  height: 90vh;
+  opacity: .6;
+}
+
+.c-jumbo-text{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.c-jumbo-text-elem{
+  padding: 5px 0;
+}
+
+.c-jumbo-img-profile{
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  border: black 3px solid;
+
+  @include media-breakpoint-down(sm)
+  {
+    width: 125px;
+    height: 125px;
+    border-radius: 75px;
+  }
+}
