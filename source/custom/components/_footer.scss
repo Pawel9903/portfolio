@@ -1,0 +1,39 @@
+.c-footer{
+  background-color: black;
+  padding: 10px 0;
+}
+
+label{
+  font-family: 'Maven Pro', sans-serif;
+  @include media-breakpoint-down(sm)
+  {
+    font-size: 12px;
+  }
+}
+
+.c-form{
+  padding: 10px 0;
+  color: white;
+
+  h2{
+    text-align: center;
+  }
+}
+
+.c-valid{
+  border-color: green;
+}
+
+.c-invalid{
+  border-color: red;
+}
+
+.c-error{
+  color: red;
+  display: none;
+}
+
+.c-send-status{
+  display: none;
+  color: green;
+}

@@ -1,4 +1,14 @@
+.c-body{
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Cinzel', serif;
+}
+
 p, b, a{
+  font-family: 'Maven Pro', sans-serif;
+
   @include media-breakpoint-down(sm)
   {
     font-size: 10px;
@@ -17,6 +27,13 @@ h4{
   @include media-breakpoint-down(sm)
   {
     font-size: 15px;
+  }
+}
+
+h5{
+  @include media-breakpoint-down(sm)
+  {
+    font-size: 13px;
   }
 }
 
@@ -53,8 +70,18 @@ h4{
   background-size: cover;
 }
 
+.c-img-2{
+  @extend .c-img;
+  background: url("../../../images/backround/computer-1209641_1280.jpg") 50% 50%;
+}
+
 .c-base-header{
   padding: 10px 0;
+  font-family: 'Cinzel', serif;
+  @include media-breakpoint-down(sm)
+  {
+    font-size: 25px;
+  }
 }
 
 .c-logo{
@@ -69,8 +96,52 @@ h4{
 }
 
 .c-skills{
-  margin-top: 30px;
   width: 100%;
   border-bottom: black 2px solid;
   padding: 10px;
+}
+
+.c-portfolio-item{
+  width: 500px;
+  height: 550px;
+  margin: 20px;
+  background-color: white;
+  text-align: center;
+
+  @include media-breakpoint-down(sm){
+    height: 300px;
+    margin: 90px 0;
+  }
+
+}
+
+.c-portfolio-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.c-img-portfolio{
+  width: 60%;
+  height: 55%;
+  border: 1px solid black;
+  margin: 5% 25% 5% 25%;
+  box-shadow: -2px -2px 5px black;
+  transform: skewY(-3deg);
+
+
+  @include media-breakpoint-down(sm){
+    height: 60%;
+    width: 70%;
+    margin: 5% 15%;
+  }
+}
+
+.c-hide{
+  opacity: 0;
+}
+
+.c-show{
+  opacity: 1;
 }
